@@ -8,19 +8,6 @@ html {
   block-size: 100%;
 }
 
-.page {
-  inline-size: 1200px;
-  block-size: 100%;
-  margin: auto;
-  align-items: center;
-  color: #fff;
-  font-family: "Fira Sans Condensed", sans-serif;
-  font-size: 18px;
-  background-color: #1b1919;
-  inline-size: 1200px;
-  block-size: 100%;
-}
-
 h1,
 h2,
 h3,
@@ -40,18 +27,28 @@ ol {
   list-style: none;
 }
 
+.page {
+  inline-size: 1200px;
+  block-size: 100%;
+  margin: auto;
+  align-items: center;
+  color: #fff;
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-size: 18px;
+  background-color: #1b1919;
+}
+
 .content {
   display: flex;
   align-items: flex-end;
   flex-direction: row;
   align-content: space-around;
   gap: 30px;
-  min-width: 1140px;
-  min-height: auto;
+  
 }
 
 .result {
-  margin-top: 212px;
+  margin-top: 200px;
   margin-left: 30px;
 }
 
@@ -247,6 +244,7 @@ h1 {
   
   .content__list {
     display: flex;
+    flex-shrink: 1;
     flex-direction: column;
     block-size: 298px;
     overflow: auto;
@@ -254,7 +252,7 @@ h1 {
   }
   
   .content__list-item:not(:last-child) {
-    margin: 0 0 30px;
+    padding-bottom: 30px;
   }
   
   .content__card-link {
@@ -262,15 +260,6 @@ h1 {
     color: #fff;
     text-decoration: none;
     margin: 2px;
-  }
-  
-  .content__video-card {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .content__video-card-description-container {
-    flex-grow: 1;
   }
   
   .content__card-link:focus {
@@ -290,6 +279,11 @@ h1 {
     background: #545050;
   }
 
+  .content__video-card {
+    display: flex;
+    align-items: start;
+  }  
+
   .content__video-card-title {
     text-transform: uppercase;
     font-family: Oswald, sans-serif;
@@ -298,13 +292,19 @@ h1 {
     text-overflow: ellipsis; 
     white-space: nowrap; 
     overflow: hidden;
-    
   }
   
   .content__video-card-description-container {
-    outline: none;
+    flex-grow: 1;
   }
 
+  .content__video-card-description {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 16.2px;
+    flex-grow: 1;
+  }
+  
   .content__video-card-thumbnail {
     inline-size: 194px;
     block-size: 103px;
