@@ -50,7 +50,6 @@ ol {
   block-size: 100%;
 }
 
-
 .content {
   display: flex;
   align-items: flex-end;
@@ -58,11 +57,11 @@ ol {
   align-content: space-around;
   gap: 30px;
   min-width: 1140px;
-  min-height: 534px;
+  min-height: auto;
 }
 
 .result {
-  margin-top: 152px;
+  margin-top: 173px;
   margin-left: 30px;
 }
 
@@ -74,18 +73,20 @@ ol {
 }
 
 .result__video-container {
-  position: relative;
-  width: 711px;
+  inline-size: 711px;
+    block-size: 386px;
+    margin-bottom: 14px;
+    position: relative;
 }
 
 h1 {
-font-family: Oswald, sans-serif;
-font-weight: 700;
-font-size: 75px;
-text-transform: uppercase;
-line-height: 0.94; 
-margin-bottom: 20px;
-color: #fff;
+  font-family: Oswald, sans-serif;
+  font-weight: 700;
+  font-size: 75px;
+  text-transform: uppercase;
+  line-height: 0.94;
+  margin-bottom: 20px;
+  color: #fff;
 }
 
 .title .content__accent{
@@ -101,7 +102,7 @@ color: #545050;
 .search-form__fieldset {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 6px;
   border: none;
   }
 
@@ -250,8 +251,8 @@ color: #545050;
 }
 
 .content__details {
-  width: 450px;
-  flex-grow: 1;
+  inline-size: 100%;
+  block-size: 100%;
   }
   
   .content__list {
@@ -263,7 +264,7 @@ color: #545050;
   }
   
   .content__list-item:not(:last-child) {
-    margin: 0 0 34px;
+    margin: 0 0 30px;
   }
   
   .content__card-link {
@@ -278,21 +279,22 @@ color: #545050;
     justify-content: space-between;
   }
   
-  .content__video-card:focus{
+  .content__card-link:focus{
     outline: none;
     background: #545050;
   }
 
-  .content__video-card:hover {
+  .content__card-link:hover {
+    outline: none;
     text-decoration: underline;
   }
 
-  .content__video-card:active {
+  .content__card-link:active {
+    outline: none;
     background: #545050;
   }
 
-  .content__video-card:focus-visible {
-    background: #545050;
+  .content__card-link:has(:focus-visible) {
     outline: 1px solid #fff;
     outline-offset: 1px;
   }
@@ -306,12 +308,21 @@ color: #545050;
     font-family: Oswald, sans-serif;
     font-weight: 700;
     font-size: 30px;
+    
   }
   
+  .content__video-card-description-container {
+    outline: none;
+  }
+
   .content__video-card-thumbnail {
-    inline-size: 200px;
-    block-size: 100px;
+    inline-size: 194px;
+    block-size: 103px;
     object-fit: cover;
-    margin-right: 24px;
     object-position: center;
   }
+
+  .error {
+    padding-bottom: 10px;
+  }
+
