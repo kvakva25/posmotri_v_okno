@@ -44,11 +44,11 @@ ol {
   flex-direction: row;
   align-content: space-around;
   gap: 30px;
-  min-width: 1140px; 
+  width: 1140px; 
 }
 
 .result {
-  margin-top: 211px;
+  margin-top: 213px;
   margin-left: 30px;
 }
 
@@ -244,12 +244,11 @@ h1 {
   
   .content__list {
     display: flex;
-    flex-shrink: 1;
     flex-direction: column;
     block-size: 298px;
     overflow: auto;
     position: relative;
-  }
+}
   
   .content__list-item:not(:last-child) {
     padding-bottom: 30px;
@@ -307,8 +306,8 @@ h1 {
   }
   
   .content__video-card-thumbnail {
-    inline-size: 200px; 
-    block-size: 100px; 
+    inline-size: 190px;
+    block-size: 105px;
     object-fit: cover; 
     object-position: center; 
   }
