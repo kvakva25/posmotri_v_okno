@@ -41,15 +41,16 @@ ol {
 .content {
   display: flex;
   align-items: flex-end;
+  justify-content: center;
   flex-direction: row;
   align-content: space-around;
   gap: 30px;
-  width: 1140px; 
+  width: 1140px;
 }
 
 .result {
   margin-top: 213px;
-  margin-left: 30px;
+  margin-left: 70px;
 }
 
 .result__video {
