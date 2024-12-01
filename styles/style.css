@@ -28,29 +28,29 @@ ol {
 }
 
 .page {
-  inline-size: 1200px;
-  block-size: 100%;
-  margin: auto;
+  display: flex;
   align-items: center;
+  margin: auto;
   color: #fff;
-  font-family: "Fira Sans Condensed", sans-serif;
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  inline-size: 1200px;
+  block-size: 100%;
 }
 
 .content {
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  flex-direction: row;
-  align-content: space-around;
-  gap: 30px;
-  width: 1140px;
+  display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 133px 30px;
+    align-items: center;
+    min-inline-size: 1140px;
+    gap: 30px;
 }
 
 .result {
-  margin-top: 213px;
-  margin-left: 70px;
+  align-self: self-end;
+    margin-bottom: 11px;
 }
 
 .result__video {
@@ -61,20 +61,18 @@ ol {
 }
 
 .result__video-container {
-  inline-size: 711px;
-  block-size: 386px;
-  margin-bottom: 14px;
   position: relative;
+  inline-size: 711px;
 }
 
 h1 {
-  font-family: Oswald, sans-serif;
-  font-weight: 700;
-  font-size: 75px;
-  text-transform: uppercase;
-  line-height: 0.94;
-  margin-bottom: 20px;
-  color: #fff;
+  padding-bottom: 28px;
+    color: #fff;
+    font-family: Oswald, sans-serif;
+    font-size: 75px;
+    font-weight: 700;
+    line-height: 94%;
+    text-transform: uppercase;
 }
 
 .title .content__accent {
