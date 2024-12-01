@@ -44,11 +44,11 @@ ol {
   flex-direction: row;
   align-content: space-around;
   gap: 30px;
-  
+  min-width: 1140px; 
 }
 
 .result {
-  margin-top: 200px;
+  margin-top: 211px;
   margin-left: 30px;
 }
 
@@ -289,6 +289,7 @@ h1 {
     font-family: Oswald, sans-serif;
     font-weight: 700;
     font-size: 30px;
+    max-width: 200px; 
     text-overflow: ellipsis; 
     white-space: nowrap; 
     overflow: hidden;
@@ -306,10 +307,10 @@ h1 {
   }
   
   .content__video-card-thumbnail {
-    inline-size: 194px;
-    block-size: 103px;
-    object-fit: cover;
-    object-position: center;
+    inline-size: 200px; 
+    block-size: 100px; 
+    object-fit: cover; 
+    object-position: center; 
   }
 
   .error {
