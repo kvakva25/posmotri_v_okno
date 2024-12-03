@@ -84,7 +84,7 @@ h1 {
   display: flex;
   align-items: flex-start;
   gap: 38px;
-  }
+}
 
 .search-form__fieldset {
   display: flex;
@@ -92,7 +92,8 @@ h1 {
   border: none;
   justify-content: flex-start;
   gap: 6px;
-  }
+}
+
 
 .search-form__fieldset-title {
   justify-self: flex-start;
@@ -272,6 +273,10 @@ h1 {
   .content__card-link:hover {
     outline: none;
     text-decoration: underline;
+  }
+
+  .content__card-link_current {
+    background: #545050;
   }
 
   .content__card-link:active {
