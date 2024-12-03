@@ -41,16 +41,15 @@ ol {
 
 .content {
   display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 133px 30px;
-    align-items: center;
-    min-inline-size: 1140px;
-    gap: 30px;
+  grid-template-columns: 1fr 1fr;
+  padding: 133px 30px;
+  align-items: center;
+  min-inline-size: 1140px;
+  gap: 30px;
 }
 
 .result {
-  align-self: self-end;
-    margin-bottom: 11px;
+   align-self: self-end;
 }
 
 .result__video {
@@ -63,16 +62,18 @@ ol {
 .result__video-container {
   position: relative;
   inline-size: 711px;
+  block-size: 386px;
+  margin-bottom: 15px;
 }
 
 h1 {
-  padding-bottom: 28px;
-    color: #fff;
-    font-family: Oswald, sans-serif;
-    font-size: 75px;
-    font-weight: 700;
-    line-height: 94%;
-    text-transform: uppercase;
+  padding-bottom: 20px;
+  color: #fff;
+  font-family: Oswald, sans-serif;
+  font-size: 75px;
+  font-weight: 700;
+  line-height: 94%;
+  text-transform: uppercase;
 }
 
 .title .content__accent {
@@ -88,8 +89,9 @@ h1 {
 .search-form__fieldset {
   display: flex;
   flex-direction: column;
-  gap: 6px;
   border: none;
+  justify-content: flex-start;
+  gap: 6px;
   }
 
 .search-form__fieldset-title {
@@ -237,14 +239,13 @@ h1 {
 }
 
 .content__details {
-  inline-size: 100%;
-  block-size: 100%;
+  margin-top: 20px;
   }
   
   .content__list {
     display: flex;
     flex-direction: column;
-    block-size: 298px;
+    block-size: 299px;
     overflow: auto;
     position: relative;
 }
@@ -273,7 +274,7 @@ h1 {
     text-decoration: underline;
   }
 
-  .content__card-link_current {
+  .content__card-link:active {
     background: #545050;
   }
 
@@ -311,7 +312,4 @@ h1 {
     object-position: center; 
   }
 
-  .error {
-    padding-bottom: 10px;
-  }
 
